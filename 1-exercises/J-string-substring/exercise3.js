@@ -9,11 +9,11 @@
 let statement = "I do not like programming";
 
 let result = "";
-
+result = statement.substring(0, 4).concat(statement.substring(8))
 console.log(result);
 
-/* EXPECTED OUTPUT 
+/* EXPECTED OUTPUT
 
   "I do like programming"
-  
+
 */
