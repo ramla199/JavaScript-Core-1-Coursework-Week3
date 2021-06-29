@@ -11,7 +11,10 @@
     Some string methods that might help you here are .replace() and .substring(). 
 */
 
-function findSafeOxygenLevel() {}
+function findSafeOxygenLevel(oxygen) {
+  const firstOne = oxygen.map(e => e.replace('%', '')).filter(e => e > 19.5 && e < 23.5).map(e => e + '%');
+  return firstOne[0];
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
